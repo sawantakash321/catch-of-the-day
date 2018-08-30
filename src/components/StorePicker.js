@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { getFunName } from '../helpers';
 
 class StorePicker extends React.Component {
@@ -28,7 +30,7 @@ class StorePicker extends React.Component {
 }
 
 StorePicker.contextTypes = {
-	router: React.PropTypes.object
+	router: PropTypes.object
 };
 
 export default StorePicker;

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import AddFishForm from './AddFishForm';
 class Inventory extends React.Component {
 	constructor() {
@@ -74,5 +76,13 @@ class Inventory extends React.Component {
 		);
 	}
 }
+
+Inventory.propTypes = {
+	fishes: PropTypes.object.isRequired,
+	updateFish: PropTypes.func.isRequired,
+	removeFish: PropTypes.func.isRequired,
+	addFish: PropTypes.func.isRequired,
+	loadSamples: PropTypes.func.isRequired
+};
 
 export default Inventory;

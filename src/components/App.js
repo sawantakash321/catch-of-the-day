@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Order from './Order';
 import Inventory from './Inventory';
 import Header from './Header';
@@ -129,5 +131,7 @@ class App extends React.Component {
 		);
 	}
 }
-
+App.propTypes = {
+	params: PropTypes.object.isRequired
+};
 export default App;
