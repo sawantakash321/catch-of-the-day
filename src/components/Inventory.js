@@ -75,13 +75,16 @@ class Inventory extends React.Component {
 			<nav className="login">
 				<h2>Inventory</h2>
 				<p>Sign in to manage your stores inventory</p>
-				<button className="github" onClick={this.authenticate('github')}>
+				<button className="github" onClick={() => this.authenticate('github')}>
 					Log In With Github
 				</button>
-				<button className="facebook" onClick={this.authenticate('github')}>
+				<button
+					className="facebook"
+					onClick={() => this.authenticate('github')}
+				>
 					Log In With Facebook
 				</button>
-				<button className="twitter" onClick={this.authenticate('github')}>
+				<button className="twitter" onClick={() => this.authenticate('github')}>
 					Log In With Twitter
 				</button>
 			</nav>

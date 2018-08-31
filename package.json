@@ -21,12 +21,14 @@
 		"react": "15.3.2",
 		"react-addons-css-transition-group": "15.3.2",
 		"react-dom": "15.3.2",
-		"react-router": "4.0.0-alpha.4"
+		"react-router": "4.0.0-alpha.4",
+		"serve": "^10.0.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",
 		"watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
 		"build": "react-scripts build",
+		"now-start": "serve ./build --single",
 		"eject": "react-scripts eject",
 		"styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
 		"styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
